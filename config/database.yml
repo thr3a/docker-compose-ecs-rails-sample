@@ -12,6 +12,7 @@ development:
 
 production:
   <<: *default
-  database: docker_compose_ecs_rails_sample_production
-  username: docker_compose_ecs_rails_sample
-  password: <%= ENV['DOCKER_COMPOSE_ECS_RAILS_SAMPLE_DATABASE_PASSWORD'] %>
+  host: host.docker.internal
+  username: root
+  password: pass
+  # password: <%= ENV['DOCKER_COMPOSE_ECS_RAILS_SAMPLE_DATABASE_PASSWORD'] %>
