@@ -12,7 +12,7 @@ development:
 
 production:
   <<: *default
-  host: host.docker.internal
+  host: <%= ENV["DB_HOST"] %>
   username: root
   password: pass
   # password: <%= ENV['DOCKER_COMPOSE_ECS_RAILS_SAMPLE_DATABASE_PASSWORD'] %>
